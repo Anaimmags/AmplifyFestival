@@ -1,4 +1,4 @@
-/* FULL PAGE */
+/* FULL PAGE DESIGN */
 
 body {
   background: rgb(252,185,84);
@@ -14,6 +14,22 @@ body {
     position: fixed;
     z-index: 0;
   }
+
+  /* HEADER */
+
+  header {
+    background: #00000002;
+    font-family: 'Audiowide', cursive;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1em;
+}
 
 /* NAV BAR */
 
@@ -77,55 +93,13 @@ body {
   color: white;
 }
 
-header {
-    background: #00000002;
-    font-family: 'Audiowide', cursive;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2em;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    border-bottom: 1em;
-}
-
-/* HOME MAIN BODY */
-
-.grid-container {
-  margin-left: 15%;
-  display: grid;
-  grid-template-rows: 8fr 1fr 4fr; 
-  grid-gap: 10px; /* row spacing */
-  align-items: center;
-  justify-items: center; /* Center horizontally */
-}
-
-#Feature-Image {
-  padding-top: 5em;
-  order:1;
-}
-
-#H2 {
-  padding-left: 18em;
-  padding-bottom: 2em;
-  order: 2;
-}
-
-#Line-up {
-    order:3;
-    padding-bottom: 2em;
-}
-
-/* Responsive to smaller screens  */
+/* RESPONSIVE TO SMALLER SCREENS  */
 @media screen and (max-width: 768px) {
   .grid-container { 
     grid-template-columns: 1fr; /* Use a single column for smaller screens */
   }
 
 }
-
 
 /*FAQs image*/
 

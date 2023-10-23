@@ -1,0 +1,32 @@
+/* HOME MAIN BODY */
+
+/* CONTENT GRID */
+
+.grid-container {
+    margin-left: 15%;
+    display: grid;
+    grid-template-rows: 8fr 1fr 4fr; 
+    grid-gap: 10px; /* row spacing */
+    align-items: center;
+    justify-items: center; /* Center horizontally */
+  }
+
+  /* AMPLIFY FEST MAIN IMAGE */
+
+  #Feature-Image {
+    padding-top: 5em;
+    order:1;
+  }
+
+  /* THE LINEUP */
+  
+  #H2 {
+    padding-left: 18em;
+    padding-bottom: 2em;
+    order: 2;
+  }
+  
+  #Line-up {
+      order:3;
+      padding-bottom: 2em;
+  }
