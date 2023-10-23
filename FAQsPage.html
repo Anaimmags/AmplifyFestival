@@ -23,56 +23,98 @@
       href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>FAQs</title>
   </head>
   <body>
+    <marquee>PRE-SALE AVAILABLE NOW</marquee>
     <header>
-      <div class="header-content">
-        <img src="Images/Amplify Fest Date Transparent.png" width="400px" />
-      </div>
-
-      <nav class="navBar">
-        <a href="index.html">Home</a>
-
-        <div class="dropdown">
-          <a href="" class="dropdownBtn">EXPLORE</a>
-          <div class="dropdown-content">
-            <a href="">GETTING HERE</a>
-            <a href="">VOLUNTEERING</a>
-            <a href="">CAMPING</a>
-            <a href="">GALLERY</a>
-          </div>
-        </div>
-        <a href="">Line Up</a>
-        <a href="">PRE-SALE</a>
-        <p class="d-inline-flex gap-1">
-  
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-</svg>
-  </button>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    <div class="form-floating mb-3">
-  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-  <label for="floatingInput">Search</label>
-</div>
-  </div>
-</div>
+      <nav class="navbar navbar-light bg-transparent">
+        <div class="container"></div>
       </nav>
+      <a class="navbar-brand" href="index.html">
+        <img src="Images/Amplify Fest Date Transparent.png" width="400px" />
+      </a>
+      <div class="navBar">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-transparent ms-auto"
+        >
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pre-Sale</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Line Up</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Explore
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Visiting</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Volunteering</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Gallery</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="searchBtn" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
+
     <main>
-      
       <div class="container">
-  <img src="Images/Campsite.jpeg" alt="colourful campsite forest" class="campsiteImg">
-  <div class="text-block">
-    <h1 style="font-size:8vw;">FAQs</h1>
-    
-  </div>
-</div>
-      <div class="accordion" id="accordionExample" style="width:90%; margin:auto;">
+        <img
+          src="Images/Campsite.jpeg"
+          alt="colourful campsite forest"
+          class="campsiteImg"
+        />
+        <div class="text-block">
+          <h1 style="font-size: 8vw">FAQs</h1>
+        </div>
+      </div>
+      <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
@@ -156,36 +198,120 @@
       </div>
     </main>
 
-    <footer>
-      <!--Social logos-->
-     <footer>
-    <div id="Column1">
-        <ul>
-            <li><a href="FAQs.html">FAQs</a></li>
-            <li>T&C's</li>
-            <li>Contact</li>
-            <li>Privacy Policy</li>
-        </ul>
-    </div>
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #d4589e">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Links -->
+        <section class="mt-5">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="footer-text">About us</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
 
-    <div id="Column2">
-        <ul>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-</svg></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
-</svg></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
-</svg></li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-</svg></li>
-        </ul>
-    </div>
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="footer-text">FAQs</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
 
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="footer-text">Contact</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="footer-text">Privacy</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="footer-text">T&Cs</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a
+            href="https://en-gb.facebook.com/"
+            class="me-4 social-link"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-f" style="font-size: 24px"></i>
+          </a>
+          <a
+            href="https://twitter.com/?lang=en"
+            class="me-4 social-link"
+            target="_blank"
+          >
+            <i class="fab fa-twitter" style="font-size: 24px"></i>
+          </a>
+          <a
+            href="https://www.google.co.uk/"
+            class="me-4 social-link"
+            target="_blank"
+          >
+            <i class="fab fa-google" style="font-size: 24px"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            class="me-4 social-link"
+            target="_blank"
+          >
+            <i class="fab fa-instagram" style="font-size: 24px"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            class="me-4 social-link"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin" style="font-size: 24px"></i>
+          </a>
+          <a
+            href="https://github.com/Anaimmags/AmplifyFestival"
+            class="me-4 social-link"
+            target="_blank"
+          >
+            <i class="fab fa-github" style="font-size: 24px"></i>
+          </a>
+        </section>
+        <!-- Grid container -->
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #d4589e">
+        © 2020 Copyright: Team B
+      </div>
+      <!-- Copyright -->
     </footer>
+    <!-- Footer -->
+
+    <!-- Footer -->
+    <div id="Footer-Marquee">
+      <marquee>PRE-SALE AVAILABLE NOW</marquee>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
