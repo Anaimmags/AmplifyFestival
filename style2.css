@@ -10,12 +10,23 @@ marquee {
   font-family: "Audiowide", cursive;
   background-color: black;
   color: yellow;
-  position: absolute;
+  position: fixed;
+  z-index: 2;
 }
 
 /* NAV BAR */
 
+header {
+  position: fixed;
+  z-index: 1;
+  background-color: #ff66c4;
+  width: 100%;
+}
+
 .navBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Vertically align content within the container */
   padding: 10px;
   font-family: "Bungee Shade";
 }
@@ -24,12 +35,14 @@ marquee {
   text-decoration: none;
   color: #f6f6f6;
   padding: 15px;
+  font-family: "Audiowide", cursive;
 }
 
 .navBar a:hover {
   background-color: #ff66c4;
   color: #f6f6f6;
   padding: 12px 16px;
+  font-family: "Audiowide", cursive;
 }
 
 /* NAV BAR DROP DOWN */
@@ -68,6 +81,7 @@ marquee {
   background-color: #ff66c4;
   color: #f6f6f6;
   z-index: 100;
+  color: #ffde59;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -82,7 +96,6 @@ marquee {
 }
 
 header {
-  background-color: #0000002b;
   font-family: "Audiowide", cursive;
   display: flex;
   justify-content: space-between;
@@ -99,9 +112,10 @@ header {
   background-repeat: no-repeat;
   height: 100%;
 }
+/*navbar search function*/
 
 .searchBtn {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Audiowide", cursive;
   background-color: #ff66c4;
   color: white;
   box-shadow: rgba(74, 77, 77, 0.5) 0 2px 5px 0;
@@ -118,10 +132,16 @@ header {
 
 /* search field*/
 .d-flex {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Audiowide", cursive;
 }
 /* MAIN BODY */
 
+/* RESPONSIVE TO SMALLER SCREENS  */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Use a single column for smaller screens */
+  }
+}
 /*FAQs image*/
 
 .campsiteImg {
@@ -153,28 +173,6 @@ header {
   margin-bottom: 10em;
 }
 
-.accordian {
-  z-index: 1;
-}
-.accordian-item {
-  z-index: 1;
-}
-
-.accordian-header {
-  z-index: 1;
-}
-
-.accordian-button {
-  z-index: 1;
-}
-
-.accordion-collapse {
-  z-index: 1;
-}
-
-.accordian-body {
-  z-index: 1;
-}
 /* FOOTER */
 
 #Column1 {
@@ -209,7 +207,6 @@ header {
   margin-right: 10px; /* Add some spacing between the list items */
 }
 
-
 .footer-text {
   color: white;
 }
@@ -228,3 +225,6 @@ header {
   color: black; /* Change the color to red on hover */
 }
 
+footer {
+  background-color: #ff66c3;
+}
