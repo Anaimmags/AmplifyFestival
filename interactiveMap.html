@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-  </head>
+</head>
   
   <body>
       <marquee>PRE-SALE AVAILABLE NOW</marquee>
@@ -40,36 +40,43 @@
     </header>
 
     <div class="mapSection">
+      
       <h1>EXPLORE THE FESTIVAL GROUNDS</h1>
       <p>Click on the areas for information.</p>
+      
       <img src="Images/AI-map.jpg" width="700px" alt="interactive festival map" usemap="#festivalmap" id="map">
-        <map name="festivalmap">
+        
+      <map name="festivalmap">
           <div class="allPopups">
           <div class="popup" style="top:385px;left:132px">New Music Stage 
             <area shape="rect" coords="107,95,205,222" alt="new music">
-            <span class="popuptext" id="myPopup">Friday 9PM: Lady HAHA Saturday 10PM: Amy Housewine</span>
+            <span class="popuptext">Friday 9PM: Lady HAHA Saturday 10PM: Amy Housewine</span>
           </div>
+          
           <div class="popup" style="top:780px;left:132px">CFG Dance Stage 
             <area shape="rect" coords="107,95,205,222" alt="dance music">
-            <span class="popuptext" id="myPopup">DJ Glowsticks brings the big dance anthems, Sunday @10PM</span>
+            <span class="popuptext">DJ Glowsticks brings the big dance anthems, Sunday @10PM</span>
           </div>          
+          
           <div class="popup" style="top:385px;left:546px">Headliner Stage
             <area shape="rect" coords="509,73,638,248" alt="headline stage">
-            <span class="popuptext" id="myPopup">Saturday 9PM: ABBA DabbaDoo 11PM: The White-Nosed-Peas</span>
+            <span class="popuptext">Saturday 9PM: ABBA DabbaDoo 11PM: The White-Nosed-Peas</span>
           </div>
+          
           <div class="popup" style="top:778px;left:547px">Chill Out Area
             <area shape="rect" coords="509,73,638,248" alt="chill music">
-            <span class="popuptext" id="myPopup">Literally chill out in our ice bar Sunday 3PM - 8PM</span>
+            <span class="popuptext">Literally chill out in our ice bar Sunday 3PM - 8PM</span>
           </div>          
+          
           <div class="popup" style="top:840px;left:336px">Main entrance
             <area shape="rect" coords="278,550,445,750" alt="main entrance">
-            <span class="popuptext" id="myPopup">Coaches and taxi drop off area</span>
+            <span class="popuptext">Coaches and taxi drop off area</span>
+          
           </div>
         </div>
         </map>
       </div>
       
-
 <footer>
     <div id="Column1">
         <ul>
@@ -96,23 +103,14 @@
 </svg></li>
         </ul>
     </div>
-
 </footer>
 
 <div id="Footer-Marquee">
-<marquee>PRE-SALE AVAILABLE NOW</marquee>
+  <marquee>PRE-SALE AVAILABLE NOW</marquee>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
- 
-<script id="popup-interaction">
-  // When the user clicks on div, open the pop up
-  const myElements = document.querySelectorAll(".popup")
-myElements.forEach(el => {
-  el.addEventListener("click", () => {
-    el.querySelector("#myPopup").classList.toggle("show");
-  })
-})
-  </script>
+<script src="siteScript.js"></script>
 
 </body>
 </html>
