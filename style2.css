@@ -1,8 +1,9 @@
 /* FULL PAGE */
 
 body {
-  background-image: linear-gradient(#ff66c4, #ffde59);
-  background-size: 100% 100%; /* Stretch the background color to cover the entire viewport */
+  background: rgb(252,185,84);
+  background: linear-gradient(90deg, rgba(252,185,84,1) 5%, rgba(255,102,196,1) 16%, rgba(252,185,84,1) 71%, rgba(255,102,196,1) 94%);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
