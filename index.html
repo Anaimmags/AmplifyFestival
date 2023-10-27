@@ -61,44 +61,85 @@
       </nav>
     </div>
   </header>
+
+  <div class="hero">
+<!-- COUNTDOWN -->
+  <div class="launch-time">
+    <div>
+      <p id="days">00</p>
+      <span>DAYS</span>
+    </div>
+    <div>
+      <p id="hours">00</p>
+      <span>HOURS</span>
+    </div>
+    <div>
+      <p id="minutes">00</p>
+      <span>MINUTES</span>
+    </div>
+    <div>
+      <p id="seconds">00</p>
+      <span>SECONDS</span>
+    </div>
+  </div>
+
   <!-- FEATURED IMAGE -->
     <div class="Featured-Image">
   <img src="Images/Amplify Fest Hero-min.png" width="100%" height="100%" alt="Amplify Fest Colour Canons">
     </div>
+  </div>
+
   <!-- LINEUP -->
   <div class="container">
-  <div class="The-Lineup">
-    <div class="row text-center">
-      <div class="col-md-12">
-        <img src="Images/the lineup.png" width="45%" alt="The Lineup">
+    <div class="The-Lineup">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="Images/Divider transparent.png" width="100%" alt="The Lineup">
+        </div>
+        <div class="col-md-4">
+          <img src="Images/the lineup.png" width="105%" alt="The Lineup">
+        </div>
+        <div class="col-md-4">
+          <img src="Images/Divider transparent - Right.png" width="100%" alt="The Lineup">
+        </div>
       </div>
-    </div>
-    </div>
-  <!-- HEADLINERS -->
-    <div class="Headliners">
-    <div class="row text-center pt-5">
-      <div class="col-md-3">
-        <img src="Images/Amy Housewine.jpg" width="102%" alt="Amy Housewine">
       </div>
-      <div class="col-md-3">
-        <img src="Images/Snog.jpg" width="100%" alt="Snog">
-      </div>
-      <div class="col-md-3">
-        <img src="Images/Lady Haha.jpg" width="100%" alt="Lady Haha">
-      </div>
-      <div class="col-md-3">
-        <img src="Images/Abba Dabba Doo.jpg" width="102%" alt="Abbda Dabba Doo">
+    <!-- HEADLINERS -->
+      <div class="Headliners">
+      <div class="row text-center gx-5">
+        <div class="col-md-3">
+          <img src="Images/Amy Housewine.jpg" width="95%" alt="Amy Housewine">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/Snog.jpg" width="95%" alt="Snog">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/Lady Haha.jpg" width="95%" alt="Lady Haha">
+        </div>
+        <div class="col-md-3">
+          <img src="Images/Abba Dabba Doo.jpg" width="95%" alt="Abbda Dabba Doo">
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <!-- Merch -->
+  <div class="Merch-Title">
+    <img src="Images/Divider transparent.png" width="28%"> 
+  <img src="Images/Merch Transparent.png" width="13%" alt="Merch">
+  <img src="Images/Divider transparent - Right.png" width="28%"> 
+  </div>
+  <div class="Merch">
+      <img src="Images/Amplify Fest Tote.png" height="400px" alt="Tote bag">
+      <img src="Images/Amplify Fest Tee.png" height="400px" alt="T-shirt">
+      <img src="Images/Amplify Fest Sticker.png" height="400px" alt="Sticker">
+  </div>
+
   <!-- SPONSORS -->
 <div class="Sponsors">
-<div class="row text-center pt-5">
-<div class="col-md-12">
-  <img src="Images/Our Sponsors Transparent..png" width="45%" alt="Our Sponsors">
-</div>
-</div>
+  <img src="Images/Divider transparent.png" width="20%"> 
+  <img src="Images/Our Sponsors Transparent..png" width="32%" alt="Our Sponsors">
+  <img src="Images/Divider transparent - Right.png" width="20%"> 
 </div>
 <div class="logos">
   <div class="logos-slide">
@@ -205,5 +246,32 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+    <script>
+      var countDownDate = new Date ("Aug 2 2024 00:00:00").getTime();
+      var x = setInterval(function(){
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+      
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+      
+      if(distance <0) {
+        clearInterval (x);
+      document.getElementById("days").innerHTML = "00";
+      document.getElementById("hours").innerHTML = "00";
+      document.getElementById("minutes").innerHTML = "00";
+      document.getElementById("seconds").innerHTML = "00";
+      }
+      },1000)
+      </script>
+</script>
+
 </body>
 </html>
