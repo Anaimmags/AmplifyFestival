@@ -1,32 +1,57 @@
 /* HOME MAIN BODY */
 
-/* CONTENT GRID */
+/* AMPLIFY FEST MAIN IMAGE */
 
-.grid-container {
-    margin-left: 15%;
-    display: grid;
-    grid-template-rows: 8fr 1fr 4fr; 
-    grid-gap: 10px; /* row spacing */
-    align-items: center;
-    justify-items: center; /* Center horizontally */
-  }
+/* THE LINEUP */
 
-  /* AMPLIFY FEST MAIN IMAGE */
+.The-Lineup {
+  padding-top: 6em;
+  order: 2;
+}
 
-  #Feature-Image {
-    padding-top: 5em;
-    order:1;
-  }
+.Headliners {
+  padding-top: 3em;
+  order: 3;
+}
 
-  /* THE LINEUP */
-  
-  #H2 {
-    padding-left: 18em;
-    padding-bottom: 2em;
-    order: 2;
+.Headliners img {
+  box-shadow: rgba(7, 7, 7, 0.548) 0px 22px 70px 4px;
+}
+
+.Sponsors {
+  padding-top: 4em;
+  padding-bottom: 1em;
+}
+
+/* SPONSORS CAROUSEL */
+
+@keyframes slide {
+  from{
+    transform: translateX(0%);
   }
-  
-  #Line-up {
-      order:3;
-      padding-bottom: 2em;
+  to{
+    transform: translateX(-100%);
   }
+}
+
+.logos {  
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+}
+
+.logos:hover .logos-slide{
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 200px;
+  margin: 0 100px;
+}
