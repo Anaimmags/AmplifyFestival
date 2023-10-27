@@ -1,29 +1,92 @@
 /* HOME MAIN BODY */
 
-/* AMPLIFY FEST MAIN IMAGE */
+/* AMPLIFY FEST HERO IMAGE */
+
+.hero {
+  position: relative;
+}
+
+/* COUNT DOWN */
+
+.launch-time {
+  animation: slideInLeft 1s ease-in-out;
+  font-family: "audiowide", cursive, bold;
+  font-size: x-large;
+  position: absolute;
+  padding-top: 7em;
+  top: 0;
+  z-index: 10;
+}
+
+.launch-time div {
+padding-left: 35px;
+color:black;
+}
+
+.launch-time div p {
+font-size: 60px;
+margin-bottom: -5px;
+font-family: "audiowide", cursive, bold;
+}
 
 /* THE LINEUP */
 
-.The-Lineup {
-  padding-top: 6em;
-  order: 2;
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
-.Headliners {
-  padding-top: 3em;
-  order: 3;
+.The-Lineup {
+  padding-top: 6em;
+}
+
+.Headliners {  
+  padding-top: 6em;
 }
 
 .Headliners img {
-  box-shadow: rgba(7, 7, 7, 0.548) 0px 22px 70px 4px;
+  border-radius: 15px; 
+  box-shadow: 0 0 0 7px black,
+  0 0 0 12px white,
+  0 0 0 13px black,
+  0 0 0 20px white,
+  0 0 0 27px black;
 }
 
-.Sponsors {
-  padding-top: 4em;
-  padding-bottom: 1em;
+
+.Merch-Title {
+  text-align: center;
+  padding-top: 7em;
+}
+
+.Merch {
+  padding-top: 6em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.Merch img {
+  margin: 2em;
+  border-radius: 15px; 
+  box-shadow: 0 0 0 7px black,
+              0 0 0 12px white,
+              0 0 0 13px black,
+              0 0 0 20px white,
+              0 0 0 27px black;
 }
 
 /* SPONSORS CAROUSEL */
+
+.Sponsors {
+  text-align: center;
+  padding-top: 6em;
+  padding-bottom: 3em;
+}
 
 @keyframes slide {
   from{
@@ -45,7 +108,6 @@
 }
 
 .logos-slide {
-  padding-top: 1em;
   padding-bottom: 1em;
   display: inline-block;
   animation: 15s slide infinite linear;

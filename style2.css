@@ -12,24 +12,30 @@ marquee {
   background-color: black;
   color: yellow;
   position: fixed;
-  z-index: 2;
+  z-index: 100;
 }
 
 /* NAV BAR */
 
 header {
   position: fixed;
-  z-index: 1;
+  z-index: 90;
   background-color: #ff66c4;
   width: 100%;
-}
+  font-family: "Audiowide", cursive;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+  padding-bottom: 15px;
+  }
+
 
 .navBar {
   display: flex;
   justify-content: flex-end;
   align-items: center; /* Vertically align content within the container */
-  padding: 10px;
   font-family: "Bungee Shade";
+  z-index: 100;
 }
 
 .navBar a {
@@ -41,7 +47,7 @@ header {
 
 .navBar a:hover {
   background-color: #ff66c4;
-  color: #f6f6f6;
+  color: #ffde59;
   padding: 12px 16px;
   font-family: "Audiowide", cursive;
 }
@@ -94,15 +100,6 @@ header {
   background-color: #ff66c4;
   color: white;
   z-index: 100;
-}
-
-header {
-  font-family: "Audiowide", cursive;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2em;
-  padding-bottom: 15px;
-  padding-left: 10px;
 }
 
 #NavBar {
@@ -161,12 +158,6 @@ header {
   padding-right: 20px;
 }
 
-#Feature-Image {
-  margin-top: 1em;
-  margin-left: 6em;
-  margin-right: 6em;
-}
-
 #Line-up {
   margin-top: 3em;
   margin-left: 6em;
@@ -209,11 +200,12 @@ header {
 }
 
 .footer-text {
+  text-decoration: none;
   color: white;
 }
 
 .footer-text:hover {
-  color: black;
+  color: #ffde59;
 }
 
 .social-link {
@@ -223,7 +215,7 @@ header {
 
 /* Add hover styles to change the color on hover (optional) */
 .social-link:hover {
-  color: black; /* Change the color to red on hover */
+  color: #ffde59; /* Change the color to red on hover */
 }
 
 footer {
