@@ -1,9 +1,195 @@
-/* FULL PAGE */
+.campsiteImg {
+  margin-top: 60px;
+  padding-bottom: 20px;
+}
 
 body {
-  background: rgb(252,185,84);
-  background: linear-gradient(90deg, rgba(252,185,84,1) 5%, rgba(255,102,196,1) 16%, rgba(252,185,84,1) 71%, rgba(255,102,196,1) 94%);
-  background-size: 100% 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin: 20px auto 80px;
+  font-size: 38px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+details {
+  width: 75%;
+  min-height: 5px;
+  max-width: 700px;
+  padding: 45px 70px 45px 45px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+details + details {
+  margin-top: 20px;
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: #ff9b9a;
+  color: black;
+
+  h2 {
+    margin: 20px auto 80px;
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+
+  details {
+    width: 75%;
+    min-height: 5px;
+    max-width: 700px;
+    padding: 45px 70px 45px 45px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+  }
+
+  details + details {
+    margin-top: 20px;
+  }
+
+  details[open] {
+    min-height: 50px;
+    background-color: #d35c9d;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  details p {
+    color: #96999d;
+    font-weight: 300;
+  }
+
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  summary:focus {
+    outline: none;
+  }
+
+  summary:focus::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 5px rebeccapurple;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .control-icon {
+    fill: rebeccapurple;
+    transition: 0.3s ease;
+    pointer-events: none;
+  }
+
+  .control-icon-close {
+    display: none;
+  }
+
+  details[open] .control-icon-close {
+    display: initial;
+    transition: 0.3s ease;
+  }
+
+  details[open] .control-icon-expand {
+    display: none;
+  }
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+details p {
+  color: white;
+  font-weight: 300;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+}
+
+summary:focus::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.control-icon {
+  fill: rebeccapurple;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  transition: 0.3s ease;
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
+
+.contactBtn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ff66c4;
+  color: white;
+  box-shadow: rgba(74, 77, 77, 0.5) 0 2px 5px 0;
+  border-radius: 8px;
+  border: none;
+  border-color: none;
+}
+
+body {
+  background-image: linear-gradient(#ff66c4, #ffde59);
+  background-size: 100% 100%; /* Stretch the background color to cover the entire viewport */
   background-repeat: no-repeat;
 }
 
@@ -16,13 +202,6 @@ marquee {
 }
 
 /* NAV BAR */
-
-header {
-  position: fixed;
-  z-index: 1;
-  background-color: #ff66c4;
-  width: 100%;
-}
 
 .navBar {
   display: flex;
@@ -103,16 +282,9 @@ header {
   padding-top: 2em;
   padding-bottom: 15px;
   padding-left: 10px;
+  z-index: 2;
 }
 
-#NavBar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover; /* Set background-size to cover */
-  background-repeat: no-repeat;
-  height: 100%;
-}
 /*navbar search function*/
 
 .searchBtn {
@@ -159,19 +331,6 @@ header {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-#Feature-Image {
-  margin-top: 1em;
-  margin-left: 6em;
-  margin-right: 6em;
-}
-
-#Line-up {
-  margin-top: 3em;
-  margin-left: 6em;
-  margin-right: 6em;
-  margin-bottom: 10em;
 }
 
 /* FOOTER */

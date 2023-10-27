@@ -36,11 +36,6 @@
     .popup:hover {
       transform: scale(1.2, 1.2);
     }
-    
-    /* Fade in the pseudo-element with the bigger shadow */
-    .popup:hover:after {
-      opacity: 1;
-    }
   
     /* The actual popup */
     .popup .popuptext {
