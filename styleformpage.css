@@ -1,8 +1,29 @@
+header {
+    position: inherit;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+
+body {
+    background-image: url('Gallery/Colour\ canons..jpg'); /* Remove the backslash */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
 
 /* FORM CSS */
 
 h2 {
     padding-bottom: 30px;
+    text-align: center;
 }
 
 form {
@@ -37,22 +58,42 @@ form input[type="number"]:focus {
 }
 
 
-#form-container {
+#form-container, #accordion-container {
     background-color: white;
-    margin-top: 20%;
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     width: 60%;
-    height: 65%;
     text-align: center;
+    height: 700px;
+    z-index: 1;
+    position: absolute;
+    left: 50%; /* Center the containers horizontally */
+    transform: translateX(-50%); /* Center the containers horizontally */
+}
+
+#form-container {
+    position: absolute;
+    top: 15%; /* Adjust the top position as needed */
+    left: 15%; /* Adjust the left position to move it to the left side */
+    width: 40%; /* Adjust the width as needed */
+    z-index: 2; 
+}
+
+#accordion-container {
+    /* Your existing styles for the accordion container */
+    position: absolute;
+    top: 15%; /* Adjust the top position to match the form */
+    left: 75%; /* Adjust the left position to move it to the right side */
+    width: 60%; /* Adjust the width as needed */
+    z-index: 1; /* Reduce the z-index to ensure it's below the form */
 }
 
 #form-wrapper {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align the form to the left */
-    height: 85vh;
+    justify-content: center; /* Center the form both horizontally and vertically */
+    height: 85vh; /* Ensure the form stays centered */
 }
 
 form #request-message {
@@ -81,53 +122,24 @@ form #submit-button:active {
     box-shadow: 0px 0px 5px #ff66c4;
 }
 
-body {
-    background-image: url('Gallery/Colour\ canons..jpg'); /* Remove the backslash */
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-}
-
-
-main {
-    position: relative;
-    z-index: 1;
-    
-  }
-
-/* ACCORDION */
-
-#accordion-container {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    border: 1px solid #dddddd;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 19%;
-    position: absolute; /* Change position to absolute */
-    left: 45%; /* Move the accordion to the left edge of the container */
-    width: 60%; /* Adjust the width to make it wider */
-    max-width: none;
-    height: 65%; /* Set the height back to 100% */
-    z-index: 1;
-}
+/*ACCORDION MORE */
 
 #accordionExample .accordion-item {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #accordionExample .accordion-button {
-    background-color: #ff66c4a0;; /* Customize the button background color */
-    color: #fff; /* Customize the button text color */
+    background-color: #ffda46;; /* Customize the button background color */
+    color: #000000; /* Customize the button text color */
+    font-family: "Audiowide", cursive;
 }
 
 #accordionExample .accordion-body {
     padding: 20px;
-    background-color: #f5f5f5; /* Customize the body background color */
+    background-color: #ffffff; /* Customize the body background color */
     border-radius: 5px;
+    
 }
 
 /* COUNTDOWN */
@@ -141,4 +153,8 @@ main {
 #countdown-text {
     font-weight: bold;
     margin-right: 5px;
+}
+
+#h2style {
+    font-family: "Audiowide", cursive;
 }
