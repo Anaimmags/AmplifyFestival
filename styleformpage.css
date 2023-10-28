@@ -38,27 +38,24 @@ form input[type="number"]:focus {
 
 
 #form-container {
-    display: flex;
-    justify-content: center;
     background-color: white;
+    margin-top: 20%;
     padding: 50px;
-    border-radius: 50px;
+    border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     width: 500px;
+    height: 65%;
+    text-align: center; /* Center the content in the form */
     position: relative;
-    margin-top: 170px;
+    right: 80px; /* Adjust the right position to move the form to the left */
 }
-
 
 #form-wrapper {
     display: flex;
     align-items: center;
-    justify-content: right; /*align form to the left*/
+    justify-content: flex-start; /* Align the form to the left */
     height: 85vh;
-    margin-right: 100px;
-    background-image: url(/);
-    
-  }
+}
 
 form #request-message {
     display: none;
@@ -86,7 +83,52 @@ form #submit-button:active {
     box-shadow: 0px 0px 5px #ff66c4;
 }
 
-main {
-    background-image: url('');
+body {
+    background-image: url('Gallery/Colour\ canons..jpg'); /* Remove the backslash */
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    position: relative;
+    z-index: 1;
+    
   }
+
+/* ACCORDION */
+
+#accordion-container {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 250px;
+    position: absolute; /* Change position to absolute */
+    left: 45%; /* Move the accordion to the left edge of the container */
+    width: 60%; /* Adjust the width to make it wider */
+    max-width: none;
+    height: 65%; /* Set the height back to 100% */
+    z-index: 1;
+}
+
+#accordionExample .accordion-item {
+    margin-bottom: 20px;
+}
+
+#accordionExample .accordion-button {
+    background-color: #ff66c4a0;; /* Customize the button background color */
+    color: #fff; /* Customize the button text color */
+}
+
+#accordionExample .accordion-body {
+    padding: 20px;
+    background-color: #f5f5f5; /* Customize the body background color */
+    border-radius: 5px;
+}
+
