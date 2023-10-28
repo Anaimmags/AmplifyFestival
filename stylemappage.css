@@ -8,9 +8,14 @@
     #map {
       position: relative;
       margin: 10px 30px 120px 10px;
-      border-radius: 8px;
+      border-radius: 15px;
       box-shadow: 5px 5px 20px black;
-    }
+      box-shadow: 0 0 0 7px black,
+      0 0 0 12px white,
+      0 0 0 13px black,
+      0 0 0 20px white,
+      0 0 0 27px black;
+      }    }
   
     .allPopups {
       height: 100%;
