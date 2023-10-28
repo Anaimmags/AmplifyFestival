@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -21,6 +24,10 @@
         <a class="navbar-brand" href="index.html">
           <img src="Images/Amplify Fest Date Transparent.png" alt="Header Image" width="400px">
         </a>
+        <div id="countdown">
+          <span id="countdown-text"></span>
+          <span id="countdown-timer"></span>
+      </div>
       </div>
     </nav>
     <div class="navBar">
@@ -62,35 +69,84 @@
     </div>
   </header>
 
-<!--FORM-->
-<main>
-    <div id="form-wrapper">
-    <div class="form-cont" id="form-container">
+  <main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- FORM -->
+                <div id="form-wrapper">
+                    <div class="form-cont" id="form-container">
+                        <form id="booking-form">
+                            <h2>Pre-book Tickets</h2>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
 
-        <form id="booking-form">
-            <h2>Pre-book Tickets</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required><br><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+                            <label for="ticket_type">Ticket Type:</label>
+                            <select id="ticket_type" name="ticket_type">
+                                <option value="general">General Admission</option>
+                                <option value="vip">VIP</option>
+                                <option value="backstage">Backstage Pass</option>
+                            </select><br><br>
 
-            <label for="ticket_type">Ticket Type:</label>
-            <select id="ticket_type" name="ticket_type">
-                <option value="general">General Admission</option>
-                <option value="vip">VIP</option>
-                <option value="backstage">Backstage Pass</option>
-            </select><br><br>
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="4" required><br><br>
 
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="4" required><br><br>
-
-            <input type="submit" value="Pre-Book Tickets" id="submit-button">
-            <p id="request-message" style="display: none;">Tickets requested</p>
-        </form>
-    </div>
+                            <input type="submit" value="Pre-Book Tickets" id="submit-button">
+                            <p id="request-message" style="display: none;">Tickets requested</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Accordion -->
+                <div id="accordion-container" class="sticky-top">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Day 1 - 23rd August 2024
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Friday's LineUp</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe nemo beatae quibusdam ipsa. Esse numquam sunt, quibusdam dicta sequi officiis nemo suscipit, alias ipsa perferendis labore, molestiae excepturi voluptatum! <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
+
 
   <!-- Footer -->
   <footer class="text-center text-white" style="background-color: #FF66C3">
@@ -177,5 +233,6 @@
     <marquee>PRE-SALE AVAILABLE NOW</marquee>
     <div></div>
   </div>
+  <script src="siteScript.js"></script>
 </body>
 </html>

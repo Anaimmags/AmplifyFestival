@@ -38,3 +38,29 @@ document.addEventListener("DOMContentLoaded", function() {
         });
       });
     });    
+
+  // COUNTDOWN FORM 
+  // Set the date and time for the countdown
+var countdownDate = new Date("2024-08-22T23:59:59").getTime();
+
+// Update the countdown every 1 second
+var countdownTimer = setInterval(function () {
+    var now = new Date().getTime();
+    var distance = countdownDate - now;
+
+    // Calculate days, hours, minutes, and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the countdown
+    var countdownElement = document.getElementById("countdown-timer");
+    countdownElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+    // If the countdown is over, display a message
+    if (distance < 0) {
+        clearInterval(countdownTimer);
+        countdownElement.innerHTML = "EXPIRED";
+    }
+}, 1000);
