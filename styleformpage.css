@@ -43,11 +43,9 @@ form input[type="number"]:focus {
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 500px;
+    width: 60%;
     height: 65%;
-    text-align: center; /* Center the content in the form */
-    position: relative;
-    right: 80px; /* Adjust the right position to move the form to the left */
+    text-align: center;
 }
 
 #form-wrapper {
@@ -108,7 +106,7 @@ main {
     border: 1px solid #dddddd;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 250px;
+    margin-top: 19%;
     position: absolute; /* Change position to absolute */
     left: 45%; /* Move the accordion to the left edge of the container */
     width: 60%; /* Adjust the width to make it wider */
@@ -132,3 +130,15 @@ main {
     border-radius: 5px;
 }
 
+/* COUNTDOWN */
+#countdown {
+    float: right;
+    margin-top: 10px;
+    font-size: 18px;
+    color: white
+}
+
+#countdown-text {
+    font-weight: bold;
+    margin-right: 5px;
+}
