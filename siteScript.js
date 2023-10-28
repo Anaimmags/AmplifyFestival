@@ -64,3 +64,21 @@ var countdownTimer = setInterval(function () {
         countdownElement.innerHTML = "EXPIRED";
     }
 }, 1000);
+
+
+//FORM BUTTON TICKETS
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("booking-form");
+    const submitButton = document.getElementById("submit-button");
+    const requestMessage = document.getElementById("request-message");
+
+    submitButton.addEventListener("click", function(e) {
+      e.preventDefault(); // Prevent form submission
+      // Display a message
+      requestMessage.style.display = "block";
+
+      // Clear the form
+      form.reset();
+    });
+  });
