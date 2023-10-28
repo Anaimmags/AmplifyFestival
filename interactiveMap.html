@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="stylemappage.css">
@@ -14,7 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body>
-  <marquee>PRE-SALE AVAILABLE NOW</marquee>
+  <marquee href="form.html">PRE-SALE AVAILABLE NOW</marquee>
+
   <header>
     <nav class="navbar navbar-light bg-transparent">
       <div class="container">
@@ -61,36 +61,39 @@
     </div>
   </header>
 
-    <div class="mapSection">
-      
-      <h1>EXPLORE THE FESTIVAL GROUNDS</h1>
+  <div class="mapContainer">
+  <div class="mapSection">
+    
+    <div class="mapFonts">  
+      <h1>EXPLORE THE GROUNDS</h1>
       <p>Click on the areas for information.</p>
+    </div>  
       
-      <img src="Images/AI-map.jpg" width="700px" alt="interactive festival map" usemap="#festivalmap" id="map">
+    <img src="Images/AI-map.jpg" width="700px" alt="interactive festival map" usemap="#festivalmap" id="map">
         
       <map name="festivalmap">
           <div class="allPopups">
-          <div class="popup" style="top:385px;left:132px">New Music Stage 
+          <div class="popup" style="top:285px;left:165px">New Music Stage 
             <area shape="rect" coords="107,95,205,222" alt="new music">
             <span class="popuptext">Friday 9PM: Lady HAHA Saturday 10PM: Amy Housewine</span>
           </div>
           
-          <div class="popup" style="top:780px;left:132px">CFG Dance Stage 
+          <div class="popup" style="top:680px;left:165px">CFG Dance Stage 
             <area shape="rect" coords="107,95,205,222" alt="dance music">
             <span class="popuptext">DJ Glowsticks brings the big dance anthems, Sunday @10PM</span>
           </div>          
           
-          <div class="popup" style="top:385px;left:546px">Headliner Stage
+          <div class="popup" style="top:285px;left:582px">Headliner Stage
             <area shape="rect" coords="509,73,638,248" alt="headline stage">
             <span class="popuptext">Saturday 9PM: ABBA DabbaDoo 11PM: The White-Nosed-Peas</span>
           </div>
           
-          <div class="popup" style="top:778px;left:547px">Chill Out Area
+          <div class="popup" style="top:678px;left:582px">Chill Out Area
             <area shape="rect" coords="509,73,638,248" alt="chill music">
             <span class="popuptext">Literally chill out in our ice bar Sunday 3PM - 8PM</span>
           </div>          
           
-          <div class="popup" style="top:840px;left:336px">Main entrance
+          <div class="popup" style="top:740px;left:372px">Main entrance
             <area shape="rect" coords="278,550,445,750" alt="main entrance">
             <span class="popuptext">Coaches and taxi drop off area</span>
           
@@ -98,6 +101,7 @@
         </div>
         </map>
       </div>
+    </div>
       
 
   <!-- Footer -->
