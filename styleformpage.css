@@ -1,128 +1,14 @@
-/* FULL PAGE */
 
-html, body {
-    background-image: linear-gradient(#ff66c4, #ffde59);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin: 0;
-    font-family: "Audiowide", cursive;
-    min-height: 100%;
-}
+/* FORM CSS */
 
-
-
-marquee {
-    background-color: black;
-    color: yellow;
-    position: absolute;
-    width: 100%;
-}
-
-/* NAV BAR */
-
-.navBar {
-    padding: 10px;
-    font-family: 'Audiowide', cursive;
-  }
-  
-  .navBar a {
-    text-decoration: none;
-    color: white;
-    padding:15px;
-  }
-  
-  .navBar a:hover {
-    background-color: #ff66c4;
-    color: #f6f6f6;
-    padding: 12px 16px;
-  }
-
-/* NAV BAR DROP DOWN */
-
-.dropdownBtn {
-    border: none;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    padding: 15px;
-    z-index: 100;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffde59;
-    color: #ff66c4;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-}
-
-.dropdown-content a {
-    color: #ff66c4;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    z-index: 100;
-}
-
-.dropdown-content a:hover {
-    background-color: #ff66c4;
-    color: #f6f6f6;
-    z-index: 100;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    z-index: 100;
-}
-
-.dropdown:hover .dropdownBtn {
-    background-color: #ff66c4;
-    color: white;
-    z-index: 100;
-}
-
-header {
-    background-color: #0000002b;
-    font-family: "Audiowide", cursive;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2em;
-    padding-bottom: 15px;
-    padding-left: 10px;
-}
-
-#NavBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-}
-
-/* MAIN BODY */
-
-main {
-    background-image: url('images/Campsite.jpeg');
-    background-size: cover; /* Adjust background size to cover the entire container */
-    background-repeat: no-repeat; /* Prevent repeating */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-    flex-direction: column;
-    text-align: center;
+h2 {
+    padding-bottom: 30px;
 }
 
 form {
     font-family: "Audiowide", cursive;
     text-align: left;
-    width: 100%;
-    max-width: 400px; /* Limit the width of the form */
+    
 }
 
 form label {
@@ -137,24 +23,42 @@ form select,
 form input[type="number"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc; /* Add a subtle border to input fields */
+    border: 1px solid #ccc;
     border-radius: 5px;
+
 }
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus,
+form input[type="number"]:focus {
+    background-color: #ff66c428;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
 
 #form-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
     background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 50px;
+    border-radius: 50px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 400px; /* Increase the width to make the form wider */
-    margin: 20px auto; /* Center the form horizontally and add spacing around it */
+    width: 500px;
     position: relative;
+    margin-top: 170px;
 }
+
+
+#form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: right; /*align form to the left*/
+    height: 85vh;
+    margin-right: 100px;
+    background-image: url(/);
+    
+  }
 
 form #request-message {
     display: none;
@@ -162,13 +66,13 @@ form #request-message {
     font-weight: bold;
     font-size: 15px;
     color: #ff66c4;
-    margin-top: 10px; /* Add margin for spacing */
-    text-align: center; /* Center align the message */
+    margin-top: 10px; 
+    text-align: center; 
 }
 
 form #submit-button {
     display: block;
-    margin: 0 auto; /* Add this line */
+    margin: 0 auto; 
     padding: 10px 20px;
     background-color: #ff66c4;
     color: white;
@@ -178,52 +82,11 @@ form #submit-button {
     font-weight: bold;
 }
 
-
-/* FOOTER */
-
-footer {
-    position: fixed;
-    bottom: 2vh;
-    width: 100%;
-    height: 10vh;
-    background: #0000001a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+form #submit-button:active {
+    box-shadow: 0px 0px 5px #ff66c4;
 }
 
-#footer-menu {
-    color: white;
-    font-family: "Audiowide", cursive;
-    font-size: small;
-    width: 50%;
-    padding: 1em;
-}
-
-#footer-menu li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-#socials {
-    color: white;
-    font-family: "Audiowide", cursive;
-    width: 50%;
-    padding: 1em;
-    justify-content: space-between;
-    text-align: right;
-}
-
-#socials ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#socials ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
+main {
+    background-image: url('');
+    background-size: cover;
+  }
