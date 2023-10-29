@@ -25,8 +25,7 @@ header {
   font-family: "Audiowide", cursive;
   display: flex;
   justify-content: space-between;
-  padding-top: 2em;
-  padding-bottom: 15px;
+  padding-top: 1em;
   }
 
 
@@ -132,14 +131,7 @@ header {
 .d-flex {
   font-family: "Audiowide", cursive;
 }
-/* MAIN BODY */
 
-/* RESPONSIVE TO SMALLER SCREENS  */
-@media screen and (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* Use a single column for smaller screens */
-  }
-}
 /*FAQs image*/
 
 .campsiteImg {
