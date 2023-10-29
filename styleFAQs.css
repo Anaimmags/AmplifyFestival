@@ -195,12 +195,6 @@ details[open] .control-icon-expand {
   border-color: none;
 }
 
-body {
-  background-image: linear-gradient(#ff66c4, #ffde59);
-  background-size: 100% 100%; /* Stretch the background color to cover the entire viewport */
-  background-repeat: no-repeat;
-}
-
 marquee {
   font-family: "Audiowide", cursive;
   background-color: black;
