@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amplify Festival 2024</title>
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="stylemappage.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
@@ -15,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <marquee href="form.html">PRE-SALE AVAILABLE NOW</marquee>
 
@@ -42,7 +40,7 @@
                 <a class="nav-link" href="form.html">PRE-SALE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="lineup.html">LINE UP</a>
+                <a class="nav-link" href="#">LINE UP</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">EXPLORE
@@ -64,47 +62,96 @@
     </div>
   </header>
 
-  <div class="mapContainer">
   <div class="mapSection">
+
     
-    <div class="mapFonts">  
-      <h1>EXPLORE THE GROUNDS</h1>
-      <p>Click on the areas for information.</p>
-    </div>  
-      
+    <div class="mapContainer">
+      <div class="mapIntro">
+        <h1>EXPLORE THE GROUNDS</h1>
+        <p>Click on the areas for information.</p>
+      </div>  
     <img src="Images/AI-map.jpg" width="700px" alt="interactive festival map" usemap="#festivalmap" id="map">
         
       <map name="festivalmap">
           <div class="allPopups">
           <div class="popup" style="top:285px;left:165px">New Music Stage 
             <area shape="rect" coords="107,95,205,222" alt="new music">
-            <span class="popuptext">Friday 9PM: Lady HAHA Saturday 10PM: Amy Housewine</span>
+            <span class="popuptext"><span class="bold">Saturday 9PM:</span><br> Lady HAHA<br> <span class="bold">Sunday 10PM:</span> Amy Housewine</span>
           </div>
           
           <div class="popup" style="top:680px;left:165px">CFG Dance Stage 
             <area shape="rect" coords="107,95,205,222" alt="dance music">
-            <span class="popuptext">DJ Glowsticks brings the big dance anthems, Sunday @10PM</span>
+            <span class="popuptext"><span class="bold">Sunday @10PM </span><br>DJ Glowsticks brings the big dance anthems</span>
           </div>          
           
           <div class="popup" style="top:285px;left:582px">Headliner Stage
             <area shape="rect" coords="509,73,638,248" alt="headline stage">
-            <span class="popuptext">Saturday 9PM: ABBA DabbaDoo 11PM: The White-Nosed-Peas</span>
+            <span class="popuptext"><span class="bold">Saturday 9PM: </span>ABBA DabbaDoo <span class="bold">Sunday 11PM:</span> <br> The 1957</span>
           </div>
           
           <div class="popup" style="top:678px;left:582px">Chill Out Area
             <area shape="rect" coords="509,73,638,248" alt="chill music">
-            <span class="popuptext">Literally chill out in our ice bar Sunday 3PM - 8PM</span>
+            <span class="popuptext"><span class="bold">Sunday 3 - 8PM</span><br>Literally chill out in our ice bar</span>
           </div>          
           
-          <div class="popup" style="top:740px;left:372px">Main entrance
+          <div class="popup" style="top:725px;left:372px">Main entrance
             <area shape="rect" coords="278,550,445,750" alt="main entrance">
-            <span class="popuptext">Coaches and taxi drop off area</span>
-          
+            <span class="popuptext"><span class="bold">Coaches and taxi drop off area</span></span>
           </div>
+
         </div>
         </map>
       </div>
+  </div>
+
+  <div class="stageSection1">   
+    <h1>New Music Stage</h1>
+    <br>
+    <div class="stageContainer1"> 
+
+    <div class="newMusicSat">
+      <h2>Saturday</h2>
+      <br>
+      <p><span class="bands">LoafMeat</span><span class="times">.................................8pm - 9pm</span></p>
+      <p><span class="bands">Queens of Leon</span><span class="times">..............10pm - 11pm</span></p>
+      <p><span class="bands">The Sundays</span><span class="times">......................11pm - 12pm</span></p>
     </div>
+    
+    <div class="newMusicSun">
+      <h2>Sunday</h2>
+      <br>
+      <p><span class="bands">Esss Club 7</span><span class="times">.............................9pm - 10pm</span></p>
+      <p><span class="bands">The Static Stones</span><span class="times">...........10pm - 11pm</span></p>
+      <p><span class="bands">The CeeGees</span><span class="times">.........................11pm - 12pm</span></p>
+    </div>
+
+    </div>
+  </div>
+
+    <div class="stageSection2">   
+      <br>
+      <h1>Headliner Stage</h1>
+      <br>
+      <div class="stageContainer2"> 
+  
+      <div class="headlineSat">
+        <h2>Saturday</h2>
+        <br>
+        <p><span class="bands">HannahRi</span><span class="times">.................................8pm - 9pm</span></p>
+        <p><span class="bands">Lua Dupa</span><span class="times">...............................10pm - 11pm</span></p>
+        <p><span class="bands">Harry Miles</span><span class="times">...........................11pm - 12pm</span></p>
+      </div>
+      
+      <div class="headlineSun">
+        <h2>Sunday</h2>
+        <br>
+        <p><span class="bands">McWalk</span><span class="times">.......................................9pm - 10pm</span></p>
+        <p><span class="bands">David Craig</span><span class="times">............................10pm - 11pm</span></p>
+        <p><span class="bands">The CeeGees</span><span class="times">.........................11pm - 12pm</span></p>
+      </div>
+    
+  </div>
+  </div>
       
 
   <!-- Footer -->
