@@ -1,0 +1,84 @@
+header {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url("Images/backgroundlineup.jpg");
+    background-size: cover; /* This will make the image cover the entire background */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-attachment: fixed;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+/*  CAROUSEL */
+.carousel-container {
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#artist-carousel {
+    width: 60%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1; /* Reduced z-index value */
+    bottom: 50px;
+    box-shadow: 0 0 20px 10px #FF66C3
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+li::marker {
+    font-size: 0;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: 5vw;
+    height: 5vw;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+.carousel-control-prev {
+    left: -7vw;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next {
+    right: -7vw;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .carousel-container {
+        margin-top: 10px;
+    }
+}

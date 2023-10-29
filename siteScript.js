@@ -38,3 +38,81 @@ document.addEventListener("DOMContentLoaded", function() {
         });
       });
     });    
+  // COUNTDOWN FORM 
+  // Set the date and time for the countdown
+var countdownDate = new Date("2024-08-22T23:59:59").getTime();
+
+// Update the countdown every 1 second
+var countdownTimer = setInterval(function () {
+    var now = new Date().getTime();
+    var distance = countdownDate - now;
+
+    // Calculate days, hours, minutes, and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the countdown
+    var countdownElement = document.getElementById("countdown-timer");
+    countdownElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+    // If the countdown is over, display a message
+    if (distance < 0) {
+        clearInterval(countdownTimer);
+        countdownElement.innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+
+//FORM BUTTON TICKETS
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("booking-form");
+    const submitButton = document.getElementById("submit-button");
+    const requestMessage = document.getElementById("request-message");
+
+    submitButton.addEventListener("click", function(e) {
+      e.preventDefault(); // Prevent form submission
+      // Display a message
+      requestMessage.style.display = "block";
+
+      // Clear the form
+      form.reset();
+    });
+  });
+
+
+//SEARCH BAR
+// Define a mapping of search keywords to corresponding URLs or actions
+const searchMappings = {
+  "ana": "aboutUs.html",
+  "sian": "aboutUs.html",
+  "gabrielle": "aboutUs.html",
+  "elisa": "aboutUs.html",
+  "lineup": "lineup.html",
+  "tickets": "tickets.html",
+  "map": "interactiveMap.html",
+  "tickets": "form.html",
+  "faqs": "FAQsPage.html",
+  "images": "Gallery.html",
+  "photos": "Gallery.html",
+  "photo": "Gallery.html",
+  "home": "index.html",
+};
+
+function performSearch() {
+  const searchInput = document.getElementById("search-input");
+  const query = searchInput.value.trim().toLowerCase();
+  
+  // Log the query to the browser's console for debugging
+  console.log(query);
+  
+  if (searchMappings[query]) {
+    // Redirect to the URL or perform the action associated with the query
+    window.location.href = searchMappings[query];
+  } else {
+    // Handle no matching results or query not found
+    alert("No results found for your query.");
+  }
+}

@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amplify Festival 2024</title>
     <link rel="stylesheet" href="styleAboutUs.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -58,14 +59,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pre-Sale</a>
+                  <a class="nav-link" href="form.html">Pre-Sale</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Line Up</a>
+                  <a class="nav-link" href="lineup.html">Line Up</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -73,29 +74,20 @@
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    >Explore
+                    >EXPLORE
                   </a>
 
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Visiting</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Volunteering</a>
-                    </li>
+                    <li><a class="dropdown-item" href="interactiveMap.html">MAP</a></li>
                     <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Gallery</a>
-                    </li>
+                    <li><a class="dropdown-item" href="Gallery.html">GALLERY</a></li>
                   </ul>
+
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="searchBtn" type="submit">Search</button>
+              <form class="d-flex" role="search" onsubmit="performSearch(); return false;">
+                <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="searchBtn" type="submit">SEARCH</button>
               </form>
             </div>
           </div>
@@ -224,5 +216,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="siteScript.js"></script>
   </body>
 </html>
