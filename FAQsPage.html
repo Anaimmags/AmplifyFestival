@@ -87,14 +87,9 @@
                   </ul>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="searchBtn" type="submit">Search</button>
+              <form class="d-flex" role="search" onsubmit="performSearch(); return false;">
+                <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="searchBtn" type="submit">SEARCH</button>
               </form>
             </div>
           </div>
@@ -518,5 +513,6 @@
       crossorigin="anonymous"
       
     ></script>
+    <script src="siteScript.js"></script>
   </body>
 </html>

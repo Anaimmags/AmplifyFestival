@@ -84,4 +84,36 @@ var countdownTimer = setInterval(function () {
   });
 
 
+//SEARCH BAR
+// Define a mapping of search keywords to corresponding URLs or actions
+const searchMappings = {
+  "ana": "aboutUs.html",
+  "sian": "aboutUs.html",
+  "gabrielle": "aboutUs.html",
+  "elisa": "aboutUs.html",
+  "lineup": "lineup.html",
+  "tickets": "tickets.html",
+  "map": "interactiveMap.html",
+  "tickets": "form.html",
+  "faqs": "FAQsPage.html",
+  "images": "Gallery.html",
+  "photos": "Gallery.html",
+  "photo": "Gallery.html",
+  "home": "index.html",
+};
 
+function performSearch() {
+  const searchInput = document.getElementById("search-input");
+  const query = searchInput.value.trim().toLowerCase();
+  
+  // Log the query to the browser's console for debugging
+  console.log(query);
+  
+  if (searchMappings[query]) {
+    // Redirect to the URL or perform the action associated with the query
+    window.location.href = searchMappings[query];
+  } else {
+    // Handle no matching results or query not found
+    alert("No results found for your query.");
+  }
+}
