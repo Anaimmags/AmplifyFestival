@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
       });
     });    
-
   // COUNTDOWN FORM 
   // Set the date and time for the countdown
 var countdownDate = new Date("2024-08-22T23:59:59").getTime();
