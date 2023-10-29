@@ -19,14 +19,14 @@
 }
 
 .launch-time div {
-padding-left: 35px;
-color:black;
+  padding-left: 35px;
+  color: black;
 }
 
 .launch-time div p {
-font-size: 60px;
-margin-bottom: -5px;
-font-family: "audiowide", cursive, bold;
+  font-size: 60px;
+  margin-bottom: -5px;
+  font-family: "audiowide", cursive, bold;
 }
 
 /* THE LINEUP */
@@ -44,19 +44,15 @@ font-family: "audiowide", cursive, bold;
   padding-top: 6em;
 }
 
-.Headliners {  
+.Headliners {
   padding-top: 6em;
 }
 
 .Headliners img {
-  border-radius: 15px; 
-  box-shadow: 0 0 0 7px black,
-  0 0 0 12px white,
-  0 0 0 13px black,
-  0 0 0 20px white,
-  0 0 0 27px black;
+  border-radius: 15px;
+  box-shadow: 0 0 0 7px black, 0 0 0 12px white, 0 0 0 13px black,
+    0 0 0 20px white, 0 0 0 27px black;
 }
-
 
 .Merch-Title {
   text-align: center;
@@ -72,12 +68,9 @@ font-family: "audiowide", cursive, bold;
 
 .Merch img {
   margin: 2em;
-  border-radius: 15px; 
-  box-shadow: 0 0 0 7px black,
-              0 0 0 12px white,
-              0 0 0 13px black,
-              0 0 0 20px white,
-              0 0 0 27px black;
+  border-radius: 15px;
+  box-shadow: 0 0 0 7px black, 0 0 0 12px white, 0 0 0 13px black,
+    0 0 0 20px white, 0 0 0 27px black;
 }
 
 /* SPONSORS CAROUSEL */
@@ -89,21 +82,21 @@ font-family: "audiowide", cursive, bold;
 }
 
 @keyframes slide {
-  from{
+  from {
     transform: translateX(0%);
   }
-  to{
+  to {
     transform: translateX(-100%);
   }
 }
 
-.logos {  
+.logos {
   overflow: hidden;
   padding: 60px 0;
   white-space: nowrap;
 }
 
-.logos:hover .logos-slide{
+.logos:hover .logos-slide {
   animation-play-state: paused;
 }
 

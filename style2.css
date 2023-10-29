@@ -1,8 +1,14 @@
 /* FULL PAGE */
 
 body {
-  background: rgb(252,185,84);
-  background: linear-gradient(90deg, rgb(236, 161, 48) 5%, rgba(255,102,196,1) 16%,  rgb(236, 161, 48) 71%, rgba(255,102,196,1) 94%);
+  background: rgb(252, 185, 84);
+  background: linear-gradient(
+    90deg,
+    rgb(236, 161, 48) 5%,
+    rgba(255, 102, 196, 1) 16%,
+    rgb(236, 161, 48) 71%,
+    rgba(255, 102, 196, 1) 94%
+  );
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -27,8 +33,7 @@ header {
   justify-content: space-between;
   padding-top: 2em;
   padding-bottom: 15px;
-  }
-
+}
 
 .navBar {
   display: flex;
