@@ -99,6 +99,7 @@ const searchMappings = {
   "images": "Gallery.html",
   "photos": "Gallery.html",
   "photo": "Gallery.html",
+  "home": "index.html",
 };
 
 function performSearch() {
