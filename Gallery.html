@@ -46,18 +46,23 @@
                 <a class="nav-link" href="lineup.html">LINE UP</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">EXPLORE
+                <a
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Explore
                 </a>
+
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">VISITING</a></li>
-                  <li><a class="dropdown-item" href="#">VOLUNTEERING</a></li>
+                  <li><a class="dropdown-item" href="interactiveMap.html">MAP</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item" href="Gallery.html">GALLERY</a></li>
                 </ul>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <form class="d-flex" role="search" onsubmit="performSearch(); return false;">
+              <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button class="searchBtn" type="submit">SEARCH</button>
             </form>
           </div>
@@ -225,5 +230,5 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 </body>
-
+<script src="siteScript.js"></script>
 </html>

@@ -19,6 +19,7 @@
 }
 
 .launch-time div {
+
   padding-left: 35px;
   color: black;
 }
@@ -27,6 +28,7 @@
   font-size: 60px;
   margin-bottom: -5px;
   font-family: "audiowide", cursive, bold;
+
 }
 
 /* THE LINEUP */
@@ -67,6 +69,7 @@
 }
 
 .Merch img {
+  max-width: 28%;
   margin: 2em;
   border-radius: 15px;
   box-shadow: 0 0 0 7px black, 0 0 0 12px white, 0 0 0 13px black,
@@ -92,7 +95,7 @@
 
 .logos {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 4em 0;
   white-space: nowrap;
 }
 
