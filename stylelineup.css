@@ -6,14 +6,26 @@ header {
 
 body {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-image: url("Images/backgroundlineup.jpg");
-    background-size: cover; /* This will make the image cover the entire background */
-    background-repeat: no-repeat; /* Prevent image from repeating */
-    background-attachment: fixed;
+    background: rgb(252, 185, 84);
+  background: linear-gradient(
+    90deg,
+    rgb(236, 161, 48) 5%,
+    rgba(255, 102, 196, 1) 16%,
+    rgb(236, 161, 48) 71%,
+    rgba(255, 102, 196, 1) 94%
+  );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
+
+h1 {
+    font-family: "Bungee Shade";
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    padding-bottom: 10vh;
+ }
+
 
 /* Footer */
 footer {
@@ -25,7 +37,6 @@ footer {
 /*  CAROUSEL */
 .carousel-container {
     position: relative;
-    margin-top: 5%;
     margin-bottom: 5%;
 }
 
@@ -36,7 +47,17 @@ footer {
     position: relative;
     z-index: 1; /* Reduced z-index value */
     bottom: 50px;
-    box-shadow: 0 0 20px 10px #FF66C3
+    box-shadow: 0 0 0 7px black, 0 0 0 12px white, 0 0 0 13px black,
+    0 0 0 20px white, 0 0 0 27px black;
+}
+
+h5, p {
+    font-family: "Audiowide", cursive;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
 }
 
 .carousel-inner img {
@@ -75,10 +96,21 @@ li::marker {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
-
-
 @media screen and (max-width: 768px) {
     .carousel-container {
         margin-top: 10px;
     }
+}
+
+/* COUNTDOWN */
+#countdown {
+    float: right;
+    margin-top: 10px;
+    font-size: 18px;
+    color: white
+}
+
+#countdown-text {
+    font-weight: bold;
+    margin-right: 5px;
 }
