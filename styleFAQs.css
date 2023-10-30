@@ -191,7 +191,7 @@ marquee {
   background-color: black;
   color: yellow;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
 }
 
 /* NAV BAR */
@@ -272,7 +272,7 @@ header {
   font-family: "Audiowide", cursive;
   display: flex;
   justify-content: space-between;
-  padding-top: 2em;
+  padding-top: 30px;
   padding-bottom: 15px;
   padding-left: 10px;
   z-index: 2;
