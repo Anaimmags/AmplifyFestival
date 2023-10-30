@@ -310,8 +310,9 @@ header {
 }
 /*FAQs image*/
 
-.container {
+.container2 {
   position: relative;
+  width: fit-content;
 }
 
 /*.flex-container {
@@ -322,10 +323,8 @@ header {
   min-height: 10vh;
 }*/
 .campsiteImg {
-  margin-top: 60px;
-  padding-bottom: 20px;
+  width: 100%;
   height: auto;
-  max-width: max-content;
 }
 h1 {
   display: block;
