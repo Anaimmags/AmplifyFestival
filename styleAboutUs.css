@@ -25,10 +25,39 @@ h1 {
   font-family: "audiowide", cursive, bold;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 30px;
 }
 .container {
   font-family: "audiowide", cursive, bold;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+button {
+  background-color: #ff66c2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button:hover {
+  color: black;
+  background-color: #ffde59;
+}
+.btnArea {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: black;
 }
