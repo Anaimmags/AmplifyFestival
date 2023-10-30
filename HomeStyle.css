@@ -6,6 +6,11 @@
   position: relative;
 }
 
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* COUNT DOWN */
 
 .launch-time {
@@ -13,7 +18,7 @@
   font-family: "audiowide", cursive, bold;
   font-size: x-large;
   position: absolute;
-  padding-top: 7em;
+  padding-top: 6em;
   top: 0;
   z-index: 10;
 }
@@ -40,38 +45,65 @@ font-family: "audiowide", cursive, bold;
   }
 }
 
-.The-Lineup {
-  padding-top: 6em;
+.Headliners-Title {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.Headliners-Title img {
+  padding-left: 15em;
+  padding-right: 15em;
+  height: auto;
+  max-width: 100%;
 }
 
 .Headliners {  
-  padding-top: 6em;
+  padding-left: 16em;
+  padding-right: 16em;
+  padding-top: 5%;
+  text-align: center;
+  display: flex;
+  max-width: 100%;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .Headliners img {
   border-radius: 15px; 
   box-shadow: 0 0 0 7px black,
-  0 0 0 12px white,
-  0 0 0 13px black,
-  0 0 0 20px white,
-  0 0 0 27px black;
+              0 0 0 12px white,
+              0 0 0 13px black,
+              0 0 0 20px white,
+              0 0 0 27px black;
+  margin: 1em;
+  height: auto;
+  max-width: 70%;
 }
-
 
 .Merch-Title {
   text-align: center;
-  padding-top: 7em;
+  padding-top: 5%;
+}
+
+.Merch-Title img {
+  padding-left: 16em;
+  padding-right: 16em;
+  max-width: 100%;
 }
 
 .Merch {
-  padding-top: 6em;
+  padding-left: 13em;
+  padding-right: 13em;
+  padding-top: 5%;
   text-align: center;
   display: flex;
-  justify-content: center;
+  max-width: 100%;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .Merch img {
-  max-width: 28%;
+  max-width: 80%;
   margin: 2em;
   border-radius: 15px; 
   box-shadow: 0 0 0 7px black,
@@ -84,9 +116,14 @@ font-family: "audiowide", cursive, bold;
 /* SPONSORS CAROUSEL */
 
 .Sponsors {
-  text-align: center;
-  padding-top: 6em;
+  padding-top:5%;
   padding-bottom: 3em;
+  max-width: 73%;
+  margin: 0 auto;
+}
+
+.Sponsors img {
+  max-width: 100%;
 }
 
 @keyframes slide {
@@ -117,4 +154,93 @@ font-family: "audiowide", cursive, bold;
 .logos-slide img {
   height: 200px;
   margin: 0 100px;
+}
+
+
+/* MOBILE RESPONSIVITY */
+@media (max-width: 768px) {
+  /* CSS styles for screens with a maximum width of 768 pixels (typical for mobile devices) */
+  .hero {
+    padding-top: 7em;
+  }
+  .launch-time {
+    display: flex;
+    font-size: 10px;
+    padding-top: 15em;
+    justify-content: center;
+  }
+  .Headliners-Title {
+    padding: 0;
+    z-index: 100;
+  }
+  .Headliners-Title img {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 2em;
+    max-width: 90%;
+  }
+  .Headliners {
+    max-width: 100%;
+  }
+  .Headliners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .Headliner {
+    flex: 0 0 43vw; /* Set a fixed width for each item */
+    max-width: 100%;
+    text-align: center;
+    margin-left: 6vw;
+    margin-top: 10vw;
+    padding-left: 0;
+    padding-right: 6vw;
+  }
+
+  .Merch-Title {
+    padding-top: 3em;
+  }
+
+  .Merch-Title img {
+    max-width: 90%;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .Merch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 4em;
+    padding-top: 2em;
+  }
+
+  .merch-item {
+    flex: 0 0 30vw; /* Set a fixed width for each item */
+    max-width: 100%;
+    text-align: center;
+    margin-left: 10vw;
+  }
+ 
+  .Sponsors {
+    padding-top: 2em;
+    text-align: center; /* Center the content horizontally */
+    max-width: 90%;
+  }
+
+  .Sponsors img {
+    max-width: 100%; /* Ensure the images don't exceed the container width */
+  }
+
+  .logos {  
+    padding: 1em 0 0 0;
+  }
+  .logos-slide img {
+    height: 100px;
+    margin: 0 50px;
+  }
 }
