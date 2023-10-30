@@ -1,7 +1,6 @@
-
 .film {
   position: sticky;
-  padding-top: 6%;
+  padding-top: 8%;
   display: flex; /* Use flexbox for horizontal alignment */
   align-items: center; /* Center images vertically */
   width: 100%; /* Adjust the container width as needed */
@@ -25,15 +24,15 @@
   border-radius: 15px;
   box-shadow: 0 0 0 7px black, 0 0 0 12px white, 0 0 0 13px black, 0 0 0 20px white, 0 0 0 27px black;
 }
-  
-  .Gallery {
-    padding-top: 1em;
-    text-align: center;
-  }
 
-  .Year-Date{
-    text-align: center;
-    color: white;
-    font-family: "Audiowide", cursive;
-    font-size:x-large;
-  }
+.Gallery {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.Year-Date{
+  text-align: center;
+  color: white;
+  font-family: "Audiowide", cursive;
+  font-size:x-large;
+}
