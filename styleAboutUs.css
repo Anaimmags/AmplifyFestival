@@ -1,9 +1,10 @@
 h1 {
   font-family: "Bungee Shade";
+  font-size: 50px;
   padding-top: 50px;
   text-align: center;
   color: white;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 
 .barImg {
@@ -30,7 +31,7 @@ h1 {
 .container {
   font-family: "audiowide", cursive, bold;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 

@@ -1,22 +1,13 @@
-.campsiteImg {
-  margin-top: 60px;
-  padding-bottom: 20px;
-  padding-top: 70px;
-  max-width: 100%;
-}
-
 body {
   font-family: "Audiowide", cursive;
   background-color: rgba(0, 0, 0, 0.1);
 }
-h1 {
-  font-family: "Bungee Shade";
-}
+
 h2 {
   margin: 20px auto 80px;
   font-family: "Bungee Shade";
 
-  font-size: 50px;
+  font-size: 75px;
   font-weight: 300;
   text-align: center;
   letter-spacing: 2px;
@@ -200,7 +191,7 @@ marquee {
   background-color: black;
   color: yellow;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
 }
 
 /* NAV BAR */
@@ -281,7 +272,7 @@ header {
   font-family: "Audiowide", cursive;
   display: flex;
   justify-content: space-between;
-  padding-top: 2em;
+  padding-top: 30px;
   padding-bottom: 15px;
   padding-left: 10px;
   z-index: 2;
@@ -322,20 +313,41 @@ header {
 .container {
   position: relative;
 }
-.text-block {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
-  padding: 250px 0 0 200px;
-  position: absolute;
-  font-size: 25px;
-  width: auto;
+
+/*.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}*/
+.campsiteImg {
+  margin-top: 60px;
+  padding-bottom: 20px;
   height: auto;
-  color: white;
+  max-width: max-content;
+}
+h1 {
+  display: block;
+  position: static;
+  text-align: center;
+
+  font-family: "Bungee Shade";
+  color: #f6f6f6;
 }
 
-
-
+/*.text-block {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5vw;
+  color: white;
+  font-family: "Bungee Shade";
+}
+*/
 /* FOOTER */
 
 #Column1 {
