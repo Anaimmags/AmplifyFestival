@@ -141,22 +141,6 @@ header {
 
 /*FAQs image*/
 
-.campsiteImg {
-  max-width: 100%;
-}
-.container {
-  position: relative;
-}
-.text-block {
-  position: absolute;
-  bottom: 35%;
-  right: 35%;
-
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 #Line-up {
   margin-top: 3em;
   margin-left: 6em;
