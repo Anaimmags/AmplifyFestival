@@ -6,16 +6,13 @@ header {
 
 body {
     min-height: 100vh;
-    background: rgb(252, 185, 84);
-  background: linear-gradient(
-    90deg,
-    rgb(236, 161, 48) 5%,
-    rgba(255, 102, 196, 1) 16%,
-    rgb(236, 161, 48) 71%,
-    rgba(255, 102, 196, 1) 94%
-  );
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url("Images/backgroundlineup.jpg");
+    background-size: cover; /* This will make the image cover the entire background */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-attachment: fixed;
 }
 
 h1 {
