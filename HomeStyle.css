@@ -16,16 +16,14 @@
 .launch-time {
   animation: slideInLeft 1s ease-in-out;
   font-family: "audiowide", cursive, bold;
-  font-size: x-large;
   position: absolute;
-  padding-top: 6em;
+  padding-top: 10%;
   top: 0;
   z-index: 10;
 }
 
 .launch-time div {
-
-  padding-left: 35px;
+  padding-left: 10%;
   color: black;
 }
 
@@ -33,7 +31,6 @@
   font-size: 60px;
   margin-bottom: -5px;
   font-family: "audiowide", cursive, bold;
-
 }
 
 /* THE LINEUP */
@@ -158,15 +155,27 @@
 /* MOBILE RESPONSIVITY */
 @media (max-width: 768px) {
   /* CSS styles for screens with a maximum width of 768 pixels (typical for mobile devices) */
+  
+.navbar-brand img{
+  width: 35vw;
+}
   .hero {
-    padding-top: 7em;
+    padding-top: 25vw;
   }
   .launch-time {
     display: flex;
-    font-size: 10px;
-    padding-top: 15em;
+    padding-top: 10%;
     justify-content: center;
+    max-width: 30%;
+    padding-left: 30vw;
+    margin: 20vw;
+    gap: 20px;
   }
+
+  .launch-time div p {
+    font-size: 15px;
+  }
+
   .Headliners-Title {
     padding: 0;
     z-index: 100;
