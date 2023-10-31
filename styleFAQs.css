@@ -312,7 +312,8 @@ header {
 
 .container2 {
   position: relative;
-  width: fit-content;
+  width: 100%;
+
 }
 
 /*.flex-container {
